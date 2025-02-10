@@ -1,16 +1,14 @@
 <script setup>
 import Nav from './components/nav.vue';
 import Footer from './components/footer.vue';
+import Home from './components/home.vue';
 </script>
 
 <template>
-  <div>
+  <div class="h-[100vh]">
     <Nav/>
-    <h1 class=" text-red-600 h-full"> App page</h1>
+    <Home/>
     <Footer/>
   </div>
 </template>
 
-<style scoped>
-
-</style>
