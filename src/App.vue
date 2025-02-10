@@ -4,7 +4,7 @@
 
 <template>
   <div>
-   <h1 class="text-red"> App page</h1>
+   <h1 class=" text-red-600"> App page</h1>
   </div>
 </template>
 
