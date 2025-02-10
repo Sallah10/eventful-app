@@ -1,6 +1,6 @@
 <template>
     <nav>
-        <!-- Navigation content goes here -->
+        <h1>navBar</h1>
     </nav>
 </template>
 
