@@ -6,25 +6,25 @@
 
 @layer components {
   .section {
-    @apply text-black flex flex-col gap-6 px-10 mx-auto py-6;
+    @apply text-black flex flex-col gap-6 px-10 mx-auto py-6 md:gap-10 mx-auto;
   }
   .card {
-    @apply bg-[#FFFFFF] w-[300px] md:w-[837px] flex flex-col gap-4 py-4 px-6 shadow-2xl shadow-[#00000029];
+    @apply bg-[#FFFFFF] w-[300px] md:w-[700px] lg:max-w-[600px] flex flex-col gap-4 py-4 px-6 shadow-2xl shadow-[#00000029] rounded-2xl;
   }
   .form {
     @apply flex flex-col gap-8;
   }
   .textH1 {
-    @apply font-bold text-[30px];
+    @apply font-bold text-[30px] md:text-[40px];
   }
   .textH2 {
     @apply text-[20px];
   }
   .textH3 {
-    @apply text-[16px];
+    @apply text-[16px] md:text-[20px];
   }
   .textp {
-    @apply text-[16px];
+    @apply text-[16px] md:text-[18px];
   }
   .button {
     @apply bg-[#5271FF] text-white rounded-2xl w-[235px] h-[64px] self-center;
