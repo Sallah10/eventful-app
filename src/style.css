@@ -1,4 +1,6 @@
 @import "tailwindcss";
-*{
+* {
   font-family: "Poppins";
+  font-style: normal;
+  box-sizing: border-box;
 }
