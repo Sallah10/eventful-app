@@ -3,8 +3,21 @@ import Home from './components/Home.vue';
 import Buckets from './components/Dashboard.vue';
 
 const routes = [
-    { path: '/', name: home, component: Home },
-    { path: '/buckets', name: buckets, component: Buckets },
+    {
+        path: '/',
+        name: Home,
+        component: Home
+    },
+    {
+        path: '/buckets',
+        name: Buckets,
+        component: Buckets
+    },
+    {
+        path: '/:catchAll(.*)',
+        name: 'not-found',
+        component: NotFoundView,
+    },
 ];
 
 const router = createRouter({
