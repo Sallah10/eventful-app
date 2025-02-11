@@ -26,6 +26,9 @@
   .textp {
     @apply text-[16px] md:text-[18px];
   }
+  .texterror {
+    @apply text-red-600 text-[16px] md:text-[18px];
+  }
   .button {
     @apply bg-[#5271FF] text-white rounded-2xl w-[235px] h-[64px] self-center;
   }

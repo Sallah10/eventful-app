@@ -1,21 +1,16 @@
+<script setup>
+import { RouterLink, useRouter } from 'vue-router';
+
+// const route = useRouter(); -->
+
+</script>
+
 <template>
     <nav class="bg-[#008289] flex justify-between text-[#ffffff] px-4 py-4 md:px-6 md:py-6">
-        <a href="
-        " class="italic text-xl">Eventful Moments.</a>
+        <!-- <RouterLink to="/buckets" class="italic text-xl">Eventful Moments.</RouterLink> -->
         <ul class="flex gap-4 text-lg">
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Register</a></li>      
+            <!-- <li><RouterLink to="/">Login</RouterLink></li> -->
+            <!-- <li><RouterLink to="/register">Register</RouterLink></li>       -->
         </ul>
     </nav>
 </template>
-
-<script>
-export default {
-    name: 'Nav',
-    data() {
-        return {
-            // Component data goes here
-        }
-    }
-}
-</script>

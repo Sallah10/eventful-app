@@ -1,3 +1,17 @@
+<script setup>
+    // import { useRouter } from 'vue-router';
+
+    // const router = useRouter();
+
+    // const logout = () => {
+    //   router.push('/'); // Redirect to login page
+    // };
+
+    // return { logout };
+
+    // <button @click="logout">Logout</button>
+
+</script>
 <template>
     <section class="section">
         <div class="flex justify-between gap-6 flex-col md:flex-row">
@@ -7,7 +21,7 @@
             </div>
             <button class="button">Add Item</button>
         </div>
-        <div class="grid grid-cols-2 gap-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <div class="card hover:bg-[#FFF5A7] self-center mx-auto">
                 <h2 class="text-lg md:textH2 font-bold">
                     Lorem ipsum began as scrambled, nonsensical Latin derived from Cicero’s 1st-century BC text De Finibus Bonorum et Malorum.
@@ -42,3 +56,25 @@
         <button class="button"> Load More</button>
     </section>
 </template>
+<!-- <template>
+  <div>
+    <h2>Welcome to Dashboard</h2>
+    <button @click="logout">Logout</button>
+  </div>
+</template>
+
+<script>
+import { useRouter } from 'vue-router';
+
+export default {
+  setup() {
+    const router = useRouter();
+
+    const logout = () => {
+      router.push('/'); // Redirect to login page
+    };
+
+    return { logout };
+  },
+};
+</script> -->
