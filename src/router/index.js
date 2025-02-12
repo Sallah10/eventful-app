@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../components/home.vue';
-import Register from '../components/register.vue';
-import Buckets from '../components/buckets.vue';
-import BucketInfo from '../components/bucketInfo.vue';
-import AddItem from '../components/addItem.vue';
-import EditItem from '../components/editItem.vue';
-
+import Home from '../components/Home.vue';
+import Register from '../components/Register.vue';
+import Buckets from '../components/Buckets.vue';
+import BucketInfo from '../components/BucketInfo.vue';
+import AddItem from '../components/AddItem.vue';
+import EditItem from '../components/EditItem.vue';
+import NotFound from '../components/NotFound.vue';
 
 const routes = [
     {
@@ -41,7 +41,7 @@ const routes = [
     {
         path: '/:catchAll(.*)',
         name: 'not-found',
-        component: NotFoundView,
+        component: NotFound,
     },
 ];
 

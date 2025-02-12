@@ -6,10 +6,11 @@
 
 @layer components {
   .section {
-    @apply text-black flex flex-col gap-6 px-10 mx-auto py-6 md:gap-10 mx-auto;
+    @apply text-black flex flex-col gap-6 px-10 mx-auto py-6 md:gap-10;
   }
+  /* 0px 3px 6px #00000029 shadow-2xl shadow-[#00000029]*/
   .card {
-    @apply bg-[#FFFFFF] w-[300px] md:w-[700px] lg:max-w-[600px] flex flex-col gap-4 py-4 px-6 shadow-2xl shadow-[#00000029] rounded-2xl;
+    @apply bg-[#FFFFFF] w-[300px] md:w-[700px] lg:max-w-[600px] shadow-2xl shadow-[#00000029] flex flex-col gap-4 py-4 px-6  rounded-2xl;
   }
   .form {
     @apply flex flex-col gap-8;

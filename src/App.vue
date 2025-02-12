@@ -1,21 +1,23 @@
 <script setup>
-import Nav from './components/nav.vue';
-import Footer from './components/footer.vue';
-import Home from './components/home.vue';
-import Buckets from './components/buckets.vue';
-import BucketInfo from './components/bucketInfo.vue';
-import AddItem from './components/addItem.vue';
-import Register from './components/register.vue';
+import Nav from './components/Nav.vue';
+import Footer from './components/Footer.vue';
+// import Home from './components/Home.vue';
+// import Buckets from './components/Buckets.vue';
+// import BucketInfo from './components/BucketInfo.vue';
+// import AddItem from './components/AddItem.vue';
+// import Register from './components/Register.vue';
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
   <div class="h-[100vh]  md:w-[100%]">
     <Nav/>
-    <Home/>
+    <!-- <Home/>
     <Buckets/>
     <BucketInfo/>
     <AddItem/>
-    <Register/>
+    <Register/> -->
+    <RouterView/>
     <Footer/>
   </div>
 </template>
