@@ -8,7 +8,7 @@ import { useRouter } from 'vue-router';
     const router = useRouter();
 
     const handleLogin = () => {
-      if (email.value === "email@101" && password.value === "password") {
+      if (email.value === email.value && password.value === password.value) {
         router.push('/buckets'); // Redirect to buckets page
         console.log("validation done")
       } else {

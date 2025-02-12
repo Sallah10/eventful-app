@@ -10,7 +10,7 @@ import { RouterView } from 'vue-router';
 </script>
 
 <template>
-  <div class="h-[100vh]  md:w-[100%]">
+  <div class="h-[100vh] ">
     <Nav/>
     <!-- <Home/>
     <Buckets/>
@@ -20,5 +20,6 @@ import { RouterView } from 'vue-router';
     <RouterView/>
     <Footer/>
   </div>
+
 </template>
 
