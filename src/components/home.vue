@@ -8,16 +8,14 @@ import { useRouter } from 'vue-router';
     const router = useRouter();
 
     const handleLogin = () => {
-      if (email.value === email.value && password.value === password.value) {
-        router.push('/buckets'); // Redirect to buckets page
-        console.log("validation done")
+      if (email.value && password.value) {
+        errorMessage.value = ''; // Clear any error message
+        router.push('/buckets'); // Redirect to another page
+        console.log("Login successful");
       } else {
-        errorMessage.value = 'Invalid email or password';
+        errorMessage.value = 'Email and Password are required!';
       }
     };
-
-    // return { username, password, errorMessage, handleLogin };
-
 </script>
 <!-- <template>
     <div class="login-container">
@@ -33,11 +31,12 @@ import { useRouter } from 'vue-router';
    -->
 
 <template>
-    <section class="section  md:items-center ">
-        <div class="w-[626px]">
+    <section class="section md:items-center lg:gap-4 lg:pt-2">
+      <!-- class="w-100% lg:w-[626px]" md:max-w-[626px]-->
+        <div >
             <h1 class="textH1 self-start">Welcome back,</h1>
         </div>
-        <h2 class="textH2 md:max-w-[626px]">
+        <h2 class="textH2 lg:w-[626px]">
             Hi, my name is Eventful Moments, I am a bucket… no, not the bucket of water but I store awesome moments you will like to have in coming years.
         </h2>
         <form @submit.prevent="handleLogin" class="form" >
@@ -59,7 +58,7 @@ import { useRouter } from 'vue-router';
                 required
                 />
             </div>
-            <button type="submit" class="button">Login</button>
+            <button type="submit" class="button lg:h-[54px]">Login</button>
             <p v-if="errorMessage" class="texterror">{{ errorMessage }}</p>
         </form>
     </section>

@@ -4,7 +4,7 @@ import Footer from '@/components/Footer.vue';
 import { RouterView } from 'vue-router';
 </script>
 
-<template class="h-[100vh]">
+<template class="h-[100vh] max-w-[100vw] flex flex-col">
     <Nav/>
     <RouterView/>
     <Footer/>

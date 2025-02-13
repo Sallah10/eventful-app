@@ -1,6 +1,6 @@
 <template>
     <section class="section md:items-center">
-         <form action="" class="form md:w-[626px]">
+         <form action="" class="form">
              <div class="gap-2 flex flex-col">
                  <h3 class="textH3">Date in the future</h3>
                  <input 
