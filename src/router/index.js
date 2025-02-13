@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import Home from '../components/Home.vue';
-import Register from '../components/Register.vue';
-import Buckets from '../components/Buckets.vue';
-import BucketInfo from '../components/BucketInfo.vue';
-import AddItem from '../components/AddItem.vue';
-import EditItem from '../components/EditItem.vue';
-import NotFound from '../components/NotFound.vue';
+import Home from '@/components/Home.vue';
+import Register from '@/components/Register.vue';
+import Buckets from '@/components/Buckets.vue';
+import BucketInfo from '@/components/BucketInfo.vue';
+import AddItem from '@/components/AddItem.vue';
+import EditItem from '@/components/EditItem.vue';
+import NotFound from '@/components/NotFound.vue';
 
 const routes = [
     { path: '/', name: 'home', component: Home },
