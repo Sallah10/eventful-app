@@ -19,7 +19,7 @@
                 <h1 class=" text-2xl md:textH1 font-bold "> Welcome John Doe</h1>
                 <p class="textP">Here are items in your eventful moment bucket.</p>
             </div>
-            <RouterLink class="button">Add Item</RouterLink>
+            <RouterLink to="/addItem" class="button">Add Item</RouterLink>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-4">
             <div class="card hover:bg-[#FFF5A7] self-center mx-auto">
