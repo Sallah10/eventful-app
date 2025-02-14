@@ -1,3 +1,7 @@
+<script>
+ import { RouterLink } from 'vue-router';
+</script>
+
 <template>
     <section class="section">
         <h1 class="text-2xl font-bold md:textH1"> Lorem ipsum began as scrambled, nonsensical Latin derived from Cicero’s 1scentury BC text De Finibus Bonorum et Malorum.</h1>
@@ -7,8 +11,9 @@
         </p>
         <div class="flex gap-4 flex-col
         md:flex-row md:justify-between">
-            <button class="button bg-[#06C3B4]">Edit</button>
+            <RouterLink to="/editItem" class="button bg-[#06C3B4]">Edit</RouterLink>
             <button class="button bg-[#C34F06]">Delete</button>
+            <!-- <button class="button bg-[#06C3B4]">Edit</button> -->
         </div>
     </section>
 </template>
