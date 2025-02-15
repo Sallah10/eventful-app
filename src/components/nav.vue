@@ -12,7 +12,7 @@ const isActiveLink = (routePath) => {
 </script>
 
 <template>
-    <nav class="bg-[#008289] flex justify-between text-[#ffffff] px-4 py-4 md:px-6 md:py-6">
+    <nav class="bg-[#008289] flex justify-between items-center text-[#ffffff] px-4 py-4 md:px-6 md:py-6">
         <RouterLink to="/buckets" class="italic text-xl">Eventful Moments.</RouterLink>
         <ul class="flex gap-2 md:gap-4 items-center text-lg">
           <template v-if="props.isAuthenticated">
