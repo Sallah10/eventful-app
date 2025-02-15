@@ -1,12 +1,15 @@
 <script setup>
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
+import { defineEmits } from 'vue';
+
 
     const name = ref('');
     const email = ref('');
     const password = ref('');
     const errorMessage = ref('');
     const router = useRouter();
+    const emits = defineEmits(['login']);
 
 const handleLogin = () => {
   if (!name.value || !email.value || !password.value) {
@@ -17,6 +20,7 @@ const handleLogin = () => {
   // Proceed if all fields are filled
   errorMessage.value = ''; // Clear any previous error message
   console.log("Registration done");
+  emits('login');
   router.push('/buckets');
 };
 </script>

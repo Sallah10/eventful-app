@@ -1,15 +1,19 @@
 <script setup>
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
+import { defineEmits } from 'vue';
+
 
     const email = ref('');
     const password = ref('');
     const errorMessage = ref('');
     const router = useRouter();
+    const emits = defineEmits(['login']);
 
     const handleLogin = () => {
       if (email.value && password.value) {
         errorMessage.value = ''; // Clear any error message
+        emits('login');
         router.push('/buckets'); // Redirect to another page
         console.log("Login successful");
       } else {
