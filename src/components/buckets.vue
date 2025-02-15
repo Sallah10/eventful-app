@@ -13,7 +13,7 @@
 
 </script>
 <template>
-    <section class="section">
+    <section class="section  h-[100%]">
         <div class="flex justify-between gap-6 flex-col md:flex-row">
             <div class="flex flex-col gap-4">
                 <h1 class=" text-2xl md:textH1 font-bold "> Welcome John Doe</h1>

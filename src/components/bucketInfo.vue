@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <section class="section">
+    <section class="section  h-[100%]">
         <h1 class="text-2xl font-bold md:textH1"> Lorem ipsum began as scrambled, nonsensical Latin derived from Cicero’s 1scentury BC text De Finibus Bonorum et Malorum.</h1>
         <h3 class="textH3 text-[#5271FF]">20/05/2023</h3>
         <p class="textP">
