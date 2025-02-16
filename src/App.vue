@@ -23,9 +23,3 @@ const logout = () => {
     <RouterView  @login="login" />
     <Footer/>
 </template>
-
-<!-- // import Home from './components/Home.vue';
-// import Buckets from './components/Buckets.vue';
-// import BucketInfo from './components/BucketInfo.vue';
-// import AddItem from './components/AddItem.vue';
-// import Register from './components/Register.vue'; -->

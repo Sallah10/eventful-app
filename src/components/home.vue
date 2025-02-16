@@ -21,18 +21,6 @@ import { defineEmits } from 'vue';
       }
     };
 </script>
-<!-- <template>
-    <div class="login-container">
-      <h2>Login</h2>
-      <form @submit.prevent="handleLogin">
-        <input type="text" v-model="username" placeholder="Username" required />
-        <input type="password" v-model="password" placeholder="Password" required />
-        <button type="submit">Login</button>
-        <p v-if="errorMessage" class="error">{{ errorMessage }}</p>
-      </form>
-    </div>
-  </template>
-   -->
 
 <template>
     <section class="section md:items-center lg:gap-4 lg:pt-2">

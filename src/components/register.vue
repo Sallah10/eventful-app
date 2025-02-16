@@ -17,8 +17,7 @@ const handleLogin = () => {
     return;
   }
 
-  // Proceed if all fields are filled
-  errorMessage.value = ''; // Clear any previous error message
+  errorMessage.value = ''; 
   console.log("Registration done");
   emits('login');
   router.push('/buckets');
