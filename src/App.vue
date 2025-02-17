@@ -14,7 +14,7 @@ const login = () => {
 
 const logout = () => {
   isAuthenticated.value = false;
-  router.push('/'); // Redirect to login page
+  router.push('/');
 };
 </script>
 
